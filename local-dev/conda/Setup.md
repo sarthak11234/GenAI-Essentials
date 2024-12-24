@@ -76,3 +76,18 @@ conda info
 conda deactivate
 conda remove -n hello --all -y
 ```
+
+### Optional (Manual Conda Activation)
+
+Sometimes you won't want conda to always run the base environment automatically whenever you use your terminal, to set this on conda you need to update its config with this command.
+
+```sh
+conda config --set auto_activate_base false
+```
+
+After restarting your terminal you can manually activate and deactivate conda simply with the commands
+```sh
+conda activate # Sends you to the Base environment by default
+
+conda deactivate # Takes your terminal out of the conda environment
+```
